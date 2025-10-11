@@ -16,6 +16,17 @@ app.get('/:text', (req, res) => {
   const text = req.params.text
   res.status(400).send(`<h1 color="#ff0000">Route ${text}.html não existe`)
 })
+
+app.get('/type=:type/strinf=:text', (req, res) => {
+  const type = req.params.text || "return"
+  const text = req.params.text || "Sua mae!"
+  if (type == "return") {
+    return `<h1>text</h1>`
+  } else if (type == "meme") {
+    return `<h1>${text}</h1>`
+  }
+  
+})
 // Corrected language route
 /*app.get('/hello/:text/lang=:id', (req, res) => {
   const text = req.params.text || 
