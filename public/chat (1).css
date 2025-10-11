@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC:wght@400;700&family=BBH+Sans+Hegarty&family=Gochi+Hand&family=Indie+Flower&family=Libertinus+Sans:ital,wght@0,400;0,700;1,400&family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&family=Oooh+Baby&family=Sawarabi+Mincho&display=swap&family=BBH+Sans+Bogle&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #5B8DFA;
+}
+
+header {
+  background-color: #3978FF;
+  padding: 5%;
+}
+
+nav {
+  color: #ffffff;
+  font-size: 1.7rem;
+  font-family: "BBH Sans Hegarty", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+h1 {
+  color: #ffffff;
+  font-size: 2.4rem;
+  text-align: center;
+  font-family: "BBH Sans Hegarty", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  padding: 3%;
+  margin: 1%;
+}
+
+a {
+  color: #ffffff;
+  text-align: left;
+  margin: 0%;
+}
