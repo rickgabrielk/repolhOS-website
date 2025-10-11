@@ -13,9 +13,9 @@ app.get('/', (req, res) => {
 })
 
 // Corrected language route
-app.get('/hello/:text/lang=:id', (req, res) => {
-  const text = req.params.text
-  const id = req.params.id  // This was incorrectly set to req.params.text
+/*app.get('/hello/:text/lang=:id', (req, res) => {
+  const text = req.params.text || 
+  const id = req.params.id || "p// This was incorrectly set to req.params.text
 
   if (id === "pt") {
     res.send(`Seu texto: |${text}|`)
@@ -25,7 +25,7 @@ app.get('/hello/:text/lang=:id', (req, res) => {
     res.status(400).send('<h1>Erro: Idioma não suportado</h1>')
   }
 })
-
+*/
 /*
 // About page - Uncomment if needed
 app.get('/about', function (req, res) {
