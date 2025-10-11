@@ -21,9 +21,9 @@ app.get('/type=:type/strinf=:text', (req, res) => {
   const type = req.params.text || "return"
   const text = req.params.text || "Sua mae!"
   if (type == "return") {
-    return `<h1>text</h1>`
+    return `<h1>${text.replace('-', " ")}</h1>`
   } else if (type == "meme") {
-    return `<h1>${text}</h1>`
+    return `<h1>${text.replace('-', " ")}</h1>`
   }
   
 })
