@@ -12,8 +12,18 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'chat.html'))
 })
 
-app.get('/hello/:text', (req, res) => {
+app.get('/hello/:text/lang=:id', (req, res) => {
   const text = req.params.text
+  const id = req.params.text
+
+  if (id == "pt") {
+    res.send(`Seu texto: |${text}|`)
+  else id (id == "en") {
+    res.send(`Text: |${text}`)
+  } else {
+    res.send(`<h1>Erro</h1>`)
+  };
+})
   
 /* app.get('/about', function (req, res) {
   res.sendFile(path.join(__dirname, '..', 'components', 'about.htm'))
