@@ -9,7 +9,7 @@ const app = express()
 
 // Home route - HTML
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'components', 'chat.html'))
+  res.sendFile(path.join(__dirname, '..', 'public', 'chat.html'))
 })
 
 /* app.get('/about', function (req, res) {
