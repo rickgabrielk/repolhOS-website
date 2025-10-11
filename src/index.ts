@@ -12,6 +12,9 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'chat.html'))
 })
 
+app.get('/hello/:text', (req, res) => {
+  const text = req.params.text
+  
 /* app.get('/about', function (req, res) {
   res.sendFile(path.join(__dirname, '..', 'components', 'about.htm'))
 })
