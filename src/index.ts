@@ -12,20 +12,23 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'chat.html'))
 })
 
+// Corrected language route
 app.get('/hello/:text/lang=:id', (req, res) => {
   const text = req.params.text
-  const id = req.params.text
+  const id = req.params.id  // This was incorrectly set to req.params.text
 
-  if (id == "pt") {
+  if (id === "pt") {
     res.send(`Seu texto: |${text}|`)
-  else id (id == "en") {
-    res.send(`Text: |${text}`)
+  } else if (id === "en") {
+    res.send(`Text: |${text}|`)
   } else {
-    res.send(`<h1>Erro</h1>`)
-  };
+    res.status(400).send('<h1>Erro: Idioma não suportado</h1>')
+  }
 })
-  
-/* app.get('/about', function (req, res) {
+
+/*
+// About page - Uncomment if needed
+app.get('/about', function (req, res) {
   res.sendFile(path.join(__dirname, '..', 'components', 'about.htm'))
 })
 
@@ -34,6 +37,16 @@ app.get('/api-data', (req, res) => {
   res.json({
     message: 'Here is some sample API data',
     items: ['apple', 'banana', 'cherry'],
+  })
+})
+
+// Health check
+app.get('/healthz', (req, res) => {
+  res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() })
+})
+*/
+
+export default app
   })
 })
 
