@@ -8,16 +8,16 @@ const __dirname = path.dirname(__filename)
 const app = express()
 
 // Home route - HTML
-app.get('k', (req, res) => {
+/*app.get('k', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'chat.html'))
-})
+})*/
 
 app.get('/:text', (req, res) => {
   const text = req.params.text
   res.status(400).send(`<h1>📌 Nosso site está com problema ao carregar os textos.</h1>`)
 })
 // Criando api
-app.get('/:text/:tw', (req, res) => {
+/*app.get('/:text/:tw', (req, res) => {
  // Gdrando o texto 
   const text = req.params.text || "Sua mae!"
   const t = req.params.text
@@ -62,7 +62,7 @@ app.get('/:text/:tw', (req, res) => {
 	</style>
 </body>
 </html>`)
-})
+})*/
 // Corrected language route
 /*app.get('/hello/:text/lang=:id', (req, res) => {
   const text = req.params.text || 
