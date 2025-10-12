@@ -57,7 +57,7 @@ app.get('/:text/:tw', (req, res) => {
 	body {
 		background-color: #62ABFF;
 	}
-	</style
+	</style>
 </body>
 </html>`)
 })
