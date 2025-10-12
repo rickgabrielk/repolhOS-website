@@ -22,8 +22,10 @@ app.get('/:text/:tw', (req, res) => {
   const text = req.params.text || "Sua mae!"
   const t = req.params.text
   // Removendo o - do texto
-  const tex = text.replace(/-/g, " ").replace(/?/g, "?"). replace(/!/g, "!").replace(/./g, "."). replace(/,/g, ",")
-  const a = t.replace(/-/g, " ").replace(/?/g, "?"). replace(/!/g, "!").replace(/./g, "."). replace(/,/g, ",")
+  const tex = text.replace(/-/g, " ").replace(/\?/g, "?").replace(/\!/g, "!").replace(/\./g, ".").replace(/,/g, ",")
+
+  const a = t.replace(/-/g, " ").replace(/\?/g, "?").replace(/\!/g, "!").replace(/\./g, ".").replace(/,/g, ",")
+
   res.type('html').send(`<!DOCTYPE html>
 <html>
 <head>
