@@ -12,10 +12,10 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'chat.html'))
 })
 
-app.get('/:text', (req, res) => {
+/*app.get('/:text', (req, res) => {
   const text = req.params.text
   res.status(400).send(`<h1 color="#ff0000">Route ${text}.html não existe`)
-})
+})*/
 // Criando api
 app.get('/strinf=:text', (req, res) => {
  // Gdrando o texto 
