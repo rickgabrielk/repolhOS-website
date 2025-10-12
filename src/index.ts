@@ -17,11 +17,13 @@ app.get('/', (req, res) => {
   res.status(400).send(`<h1 color="#ff0000">Route ${text}.html não existe`)
 })*/
 // Criando api
-app.get('/strinf=:text', (req, res) => {
+app.get('/:text/:tw', (req, res) => {
  // Gdrando o texto 
   const text = req.params.text || "Sua mae!"
+  const t = req.params.text
   // Removendo o - do texto
-  const tex = text.replace(/-/g, " ")
+  const tex = text.replace(/-/g, " ").replace(/?/g, "?"). replace(/!/g, "!").replace(/./g, "."). replace(/,/g, ",")
+  const a = t.replace(/-/g, " ").replace(/?/g, "?"). replace(/!/g, "!").replace(/./g, "."). replace(/,/g, ",")
   res.send(`<!DOCTYPE html>
 <html>
 <head>
@@ -34,6 +36,8 @@ app.get('/strinf=:text', (req, res) => {
 	<header>Zuando e polemicando na internet de IA</header>
 	<main>
 		<h1>${tex}</h1>
+		<p>${a}</p>
+		<br>
 		<p><strong>Todo conteúdo postado nessa pagina é da responsabilidade de quem postou e não minha, pois isso aqui é publico e qualquer um pode colocar merd aquu.</strong></p>
 	</main>
 	<style>
