@@ -12,9 +12,12 @@ const app = express()
   res.sendFile(path.join(__dirname, '..', 'public', 'chat.html'))
 })*/
 
-app.get('/', (req, res) => {
+app.get('/:text', (req, res) => {
   const text = req.params.text
-  res.status(400).send(`<h1>📌 Nosso site está com problema ao carregar os textos.</h1>`)
+  if (text == "/") {
+  	res.status(400).send(`<h1>📌 Nosso site está com problema ao carregar os textos.</h1>`)
+  	return
+  
 })
 // Criando api
 app.get('/:text/:tw', (req, res) => {
