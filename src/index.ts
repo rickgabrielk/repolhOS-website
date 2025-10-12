@@ -16,15 +16,12 @@ app.get('/:text', (req, res) => {
   const text = req.params.text
   res.status(400).send(`<h1 color="#ff0000">Route ${text}.html não existe`)
 })
-
-app.get('/type=:type/strinf=:text', (req, res) => {
-  const type = req.params.text || "return"
+// Criando api
+app.get('/strinf=:text/style=:t', (req, res) => {
+ // Gdrando o texto 
   const text = req.params.text || "Sua mae!"
-  if (type == "return") {
-    return `<h1>${text.replace('-', " ")}</h1>`
-  } else if (type == "meme") {
-    return `<h1>${text.replace('-', " ")}</h1>`
-  }
+  // Removendo o - do texto
+  const tex = text.replace(/-/g, " ")
   
 })
 // Corrected language route
