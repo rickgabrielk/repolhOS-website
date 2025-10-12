@@ -12,7 +12,7 @@ const app = express()
   res.sendFile(path.join(__dirname, '..', 'public', 'chat.html'))
 })*/
 
-app.get('/:text', (req, res) => {
+app.get(':text', (req, res) => {
   const text = req.params.text
   if (text == "/") {
   	res.status(400).send(`<h1>📌 Nosso site está com problema ao carregar os textos.</h1>`)
