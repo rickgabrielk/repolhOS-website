@@ -17,7 +17,7 @@ app.get('/:text', (req, res) => {
   if (text == "/") {
   	res.status(400).send(`<h1>📌 Nosso site está com problema ao carregar os textos.</h1>`)
   	return
-  
+  }
 })
 // Criando api
 app.get('/:text/:tw', (req, res) => {
