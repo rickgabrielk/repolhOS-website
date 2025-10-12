@@ -24,7 +24,7 @@ app.get('/:text/:tw', (req, res) => {
   // Removendo o - do texto
   const tex = text.replace(/-/g, " ").replace(/?/g, "?"). replace(/!/g, "!").replace(/./g, "."). replace(/,/g, ",")
   const a = t.replace(/-/g, " ").replace(/?/g, "?"). replace(/!/g, "!").replace(/./g, "."). replace(/,/g, ",")
-  res.send(`<!DOCTYPE html>
+  res.type('html').send(`<!DOCTYPE html>
 <html>
 <head>
 	<meta charset="UTF-8">)
