@@ -12,12 +12,12 @@ const app = express()
   res.sendFile(path.join(__dirname, '..', 'public', 'chat.html'))
 })*/
 
-app.get('/:text', (req, res) => {
+app.get('/', (req, res) => {
   const text = req.params.text
   res.status(400).send(`<h1>📌 Nosso site está com problema ao carregar os textos.</h1>`)
 })
 // Criando api
-/*app.get('/:text/:tw', (req, res) => {
+app.get('/:text/:tw', (req, res) => {
  // Gdrando o texto 
   const text = req.params.text || "Sua mae!"
   const t = req.params.text
@@ -26,21 +26,21 @@ app.get('/:text', (req, res) => {
 
   const a = t.replace(/-/g, " ").replace(/\?/g, "?").replace(/\!/g, "!").replace(/\./g, ".").replace(/,/g, ",")
 
-  res.type('html').send(`<!DOCTYPE html>
-<html>
-<head>
-	<meta charset="UTF-8">)
-
+  res.type('html').send(`
+  <!DOCTYPE html>
+  <html>
+  <head>
+	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Meme</title>
-</head>
-<body>
+  </head>
+  <body>
 	<header>Zuando e polemicando na internet de IA</header>
 	<main>
 		<h1>${tex}</h1>
 		<p>${a}</p>
 		<br>
-		<p><strong>Todo conteúdo postado nessa pagina é da responsabilidade de quem postou e não minha, pois isso aqui é publico e qualquer um pode colocar merd aquu.</strong></p>
+		<p><strong>Todo conteúdo postado nessa pagina é da responsabilidade de quem postou e não minha, pois isso aqui é publico e qualquer um pode colocar merd aqui.</strong></p>
 	</main>
 	<style>
 	h1 {
@@ -60,9 +60,10 @@ app.get('/:text', (req, res) => {
 		background-color: #62ABFF;
 	}
 	</style>
-</body>
-</html>`)
-})*/
+  </body>
+  </html>
+`)
+})
 // Corrected language route
 /*app.get('/hello/:text/lang=:id', (req, res) => {
   const text = req.params.text || 
