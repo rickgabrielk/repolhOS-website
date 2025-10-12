@@ -22,7 +22,40 @@ app.get('/strinf=:text', (req, res) => {
   const text = req.params.text || "Sua mae!"
   // Removendo o - do texto
   const tex = text.replace(/-/g, " ")
-  
+  res.send(`<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">)
+
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Meme</title>
+</head>
+<body>
+	<header>Zuando e polemicando na internet de IA</header>
+	<main>
+		<h1>${tex}</h1>
+		<p><strong>Todo conteúdo postado nessa pagina é da responsabilidade de quem postou e não minha, pois isso aqui é publico e qualquer um pode colocar merd aquu.</strong></p>
+	</main>
+	<style>
+	h1 {
+		color: #fffff1;
+		font-size: 3.5rem;
+		
+	}
+	p, footer {
+		color: #7DFF31;
+		font-size: 18px;
+	}
+	header {
+		color: #000;
+		font-size: 23px;
+	}
+	body {
+		background-color: #62ABFF;
+	}
+	</style
+</body>
+</html>`)
 })
 // Corrected language route
 /*app.get('/hello/:text/lang=:id', (req, res) => {
