@@ -17,7 +17,7 @@ app.get('/', (req, res) => {
   res.status(400).send(`<h1>📌 Nosso site está com problema ao carregar os textos.</h1>`)
 })
 // Criando api
-app.get('/:text/:tw', (req, res) => {
+app.get('/text/:text/:tw', (req, res) => {
  // Gdrando o texto 
   const text = req.params.text || "Sua mae!"
   const t = req.params.text
@@ -26,8 +26,7 @@ app.get('/:text/:tw', (req, res) => {
 
   const a = t.replace(/-/g, " ").replace(/\?/g, "?").replace(/\!/g, "!").replace(/\./g, ".").replace(/,/g, ",")
 
-  res.type('html').send(`
-  <!DOCTYPE html>
+  res.type('html').send(`<!DOCTYPE html>
   <html>
   <head>
 	<meta charset="UTF-8">
@@ -61,8 +60,7 @@ app.get('/:text/:tw', (req, res) => {
 	}
 	</style>
   </body>
-  </html>
-`)
+  </html>`)
 })
 // Corrected language route
 /*app.get('/hello/:text/lang=:id', (req, res) => {
