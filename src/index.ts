@@ -20,7 +20,7 @@ app.get('/', (req, res) => {
 app.get('/text/:text/:tw', (req, res) => {
  // Gdrando o texto 
   const text = req.params.text || "Sua mae!"
-  const t = req.params.t
+  const t = req.params.tw
   // Removendo o - do texto
   const tex = text.replace(/-/g, " ").replace(/\?/g, "?").replace(/\!/g, "!").replace(/\./g, ".").replace(/,/g, ",")
 
