@@ -17,7 +17,7 @@ app.get('/:text', (req, res) => {
   res.status(400).send(`<h1 color="#ff0000">Route ${text}.html não existe`)
 })
 // Criando api
-app.get('/strinf=:text/style=:t', (req, res) => {
+app.get('/strinf=:text', (req, res) => {
  // Gdrando o texto 
   const text = req.params.text || "Sua mae!"
   // Removendo o - do texto
