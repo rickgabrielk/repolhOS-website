@@ -14,7 +14,12 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'hom.html'))
 })
 
-app.get('/:tetx', (req, res) => {
+app.use((err, req, res, next) => {
+  console.error(err.stack)
+  res.status(500).send(`Erro encontrado: ${err}`)
+})
+
+app.use((req, res, next) => {
   res.status(404).type('html').send(`<!DOCTYPE html>
 <html>
 <head>
@@ -44,7 +49,7 @@ app.get('/:tetx', (req, res) => {
   </style>
   <main>
     <h1>Erro 404</h1>
-    <h3>O caminho ${req.originalUrl} não existe no site.</h3>
+    <h3>O camimnho não existe no site.</h3>
     <p><a href="https://repolh.de/">Caso queira retornar para pagina inicial do site.</a></p>
   </main>
 </body>
