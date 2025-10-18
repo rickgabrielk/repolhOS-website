@@ -12,6 +12,7 @@ app.use(express.static(path.join(__dirname, '..', 'public')))
 // Home route - HTML
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'hom.html'))
+  res.sendFile(path.join(__dirname, '..', 'public', 'hom.css'))
 })
 
 /*app.get('/', (req, res) => {
