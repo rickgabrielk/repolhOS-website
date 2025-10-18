@@ -14,13 +14,8 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'hom.html'))
 })
 
-app.get('/:route', (req, res) => {
-  const t = req.params.route
-  const route = t.replaceAll('/', '-')
-  if (route === 'sabia-mais') {
-    res.sendFile(path.join(__dirname, '..', 'public', 'hom.html'))
-  } else {
-    res.type('html').send(`<!DOCTYPE html>
+app.get((req, res) => {
+  res.status(404).type('html').send(`<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -49,12 +44,11 @@ app.get('/:route', (req, res) => {
   </style>
   <main>
     <h1>Erro 404</h1>
-    <h3>O caminho https://repolh.de/${route}/ não existe no site.</h3>
+    <h3>O caminho ${req.originalUrl} não existe no site.</h3>
     <p><a href="https://repolh.de/">Caso queira retornar para pagina inicial do site.</a></p>
   </main>
 </body>
 </html>`)
-  }
 })
 /*app.get('/', (req, res) => {
   const text = req.params.text
