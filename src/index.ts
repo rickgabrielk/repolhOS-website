@@ -8,23 +8,23 @@ const __dirname = path.dirname(__filename)
 const app = express()
 
 // Home route - HTML
-/*app.get('k', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'public', 'chat.html'))
-})*/
-
 app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'public', 'hom.html'))
+})
+
+/*app.get('/', (req, res) => {
   const text = req.params.text
   res.status(400).send(`<h1>📌 Nosso site está com problema ao carregar os textos.</h1>`)
-})
+})*/
 // Criando api
-app.get('/text/:text/:tw', (req, res) => {
+app.get('/:a/:b', (req, res) => {
  // Gdrando o texto 
-  const text = req.params.text || "Sua mae!"
-  const t = req.params.tw
+  const a = req.params.a 
+  const b = req.params.b
   // Removendo o - do texto
-  const tex = text.replace(/-/g, " ").replace(/\?/g, "?").replace(/\!/g, "!").replace(/\./g, ".").replace(/,/g, ",")
+  const aa = a.replace(/-/g, " ").replace(/\?/g, "?").replace(/\!/g, "!").replace(/\./g, ".").replace(/,/g, ",")
 
-  const a = t.replace(/-/g, " ").replace(/\?/g, "?").replace(/\!/g, "!").replace(/\./g, ".").replace(/,/g, ",")
+  const bb = b.replace(/-/g, " ").replace(/\?/g, "?").replace(/\!/g, "!").replace(/\./g, ".").replace(/,/g, ",")
 
   res.type('html').send(`<!DOCTYPE html>
   <html>
@@ -36,8 +36,8 @@ app.get('/text/:text/:tw', (req, res) => {
   <body>
 	<header>Zuando e polemicando na internet de IA</header>
 	<main>
-		<h1>${tex}</h1>
-		<p>${a}</p>
+		<h1>${aa}</h1>
+		<p>${bb}</p>
 		<br>
 		<p><strong>Todo conteúdo postado nessa pagina é da responsabilidade de quem postou e não minha, pois isso aqui é publico e qualquer um pode colocar merd aqui.</strong></p>
 	</main>
