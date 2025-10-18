@@ -14,7 +14,7 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'hom.html'))
 })
 
-app.get((req, res) => {
+app.get('/:tetx', (req, res) => {
   res.status(404).type('html').send(`<!DOCTYPE html>
 <html>
 <head>
