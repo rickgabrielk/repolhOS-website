@@ -8,17 +8,59 @@ const __dirname = path.dirname(__filename)
 const app = express()
 
 
-// Home route - HTML
+// Home rou
+
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'hom.html'))
 })
 
+app.get('/:route', (req, res) => {
+  const route = req.params.route
+  if (route === 'sabia-mais') {
+    res.sendFile(path.join(__dirname, '..', 'public', 'hom.html'))
+  } else {
+    res.type('html').send(`<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 Erro</title>
+</head>
+<body>
+  <style>
+    h1 {
+      color: #ff0000;
+      font-size: 56px;
+      margin: 17%;
+    }
+    h3 {
+      color: #FCE040;
+      padding: 5%;
+      
+    }
+    a {
+      padding: 5%;
+      color: #FCE040;
+    }
+    body {
+      background-color: #999999;
+    }
+  </style>
+  <main>
+    <h1>Erro 404</h1>
+    <h3>O caminho https://repolh.de/${route}/ não existe no site.</h3>
+    <p><a href="https://repolh.de/">Caso queira retornar para pagina inicial do site.</a></p>
+  </main>
+</body>
+</html>`)
+  }
+})
 /*app.get('/', (req, res) => {
   const text = req.params.text
   res.status(400).send(`<h1>📌 Nosso site está com problema ao carregar os textos.</h1>`)
 })*/
 // Criando api
-app.get('/:a/:b', (req, res) => {
+/*app.get('/:a/:b', (req, res) => {
  // Gdrando o texto 
   const a = req.params.a 
   const b = req.params.b
@@ -62,7 +104,7 @@ app.get('/:a/:b', (req, res) => {
 	</style>
   </body>
   </html>`)
-})
+})*/
 // Corrected language route
 /*app.get('/hello/:text/lang=:id', (req, res) => {
   const text = req.params.text || 
