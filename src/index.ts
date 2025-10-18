@@ -15,7 +15,8 @@ app.get('/', (req, res) => {
 })
 
 app.get('/:route', (req, res) => {
-  const route = req.params.route
+  const t = req.params.route
+  const route = t.replaceAll('/', '-')
   if (route === 'sabia-mais') {
     res.sendFile(path.join(__dirname, '..', 'public', 'hom.html'))
   } else {
