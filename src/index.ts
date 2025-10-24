@@ -22,7 +22,9 @@ app.use((err, req, res, next) => {
 app.use((req, res, next) => {
     const completeUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
     console.log(completeUrl);
-  res.status(404).type('html').send(`<!DOCTYPE html>
+    res.sendFile(path.join(__dirname, '..', 'public', '404.html'))
+	return ``
+/*  res.status(404).type('html').send(`<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -56,7 +58,7 @@ app.use((req, res, next) => {
     <p><a href="https://repolh.de/">Caso queira retornar para pagina inicial do site.</a></p>
   </main>
 </body>
-</html>`)
+</html>`)*/
 })
 /*app.get('/', (req, res) => {
   const text = req.params.text
