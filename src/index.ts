@@ -20,6 +20,8 @@ app.use((err, req, res, next) => {
 })
 
 app.use((req, res, next) => {
+  const completeUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
+  console.log(completeUrl);
   res.status(404).type('html').send(`<!DOCTYPE html>
 <html>
 <head>
@@ -49,6 +51,7 @@ app.use((req, res, next) => {
   </style>
   <main>
     <h1>Erro 404</h1>
+	<p>{completeUrl}</p>
     <h3>O camimnho não existe no site.</h3>
     <p><a href="https://repolh.de/">Caso queira retornar para pagina inicial do site.</a></p>
   </main>
