@@ -11,6 +11,10 @@ const app = express()
 // Home rou
 
 app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, '..', 'public', 'a.html'))
+})
+
+app.get('/portuguese', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'h.html'))
 })
 
