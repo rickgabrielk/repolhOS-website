@@ -22,11 +22,11 @@ app.use((err, req, res, next) => {
 app.use((req, res, next) => {
     const completeUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
     console.log(completeUrl);
-  /  res.sendFile(path.join(__dirname, '..', 'public', '404.html'))
-	res.status(404).send(`<h1>Pagina não encontrada</h1>
-    <p>Url: ${completeUrl}</p>
-    <h3>Volte para pagina inicial pelo link a seguir <a href="https://repolh.de/">Home</a></h3>`)
-/*  res.status(404).type('html').send(`<!DOCTYPE html>
+  // res.sendFile(path.join(__dirname, '..', 'public', '404.html'))
+//	res.status(404).send(`<h1>Pagina não encontrada</h1>
+//    <p>Url: ${completeUrl}</p>
+//    <h3>Volte para pagina inicial pelo link a seguir <a href="https://repolh.de/">Home</a></h3>`)
+res.status(404).type('html').send(`<!DOCTYPE html>
 <html>
 <head>
   <meta charset="UTF-8">
@@ -60,7 +60,7 @@ app.use((req, res, next) => {
     <p><a href="https://repolh.de/">Caso queira retornar para pagina inicial do site.</a></p>
   </main>
 </body>
-</html>`)*/
+</html>`)
 })
 /*app.get('/', (req, res) => {
   const text = req.params.text
