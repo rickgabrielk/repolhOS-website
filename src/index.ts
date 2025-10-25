@@ -18,6 +18,7 @@ app.get('/portuguese', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'a.html'))
 })
 
+app.get('/lang=?:lang/route=?:route/local=?:local', (req, res) => })
 app.use((err, req, res, next) => {
   console.error(err.stack)
   res.status(500).send(`Erro encontrado: ${err}`)
