@@ -11,7 +11,8 @@ const app = express()
 // Home rou
 
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))
+ // res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))
+	res.redirect('/en')
 })
 
 app.get('/blacklist=:nool', (req, res) => {
@@ -25,7 +26,8 @@ app.get('/blacklist=:nool', (req, res) => {
 
 app.get('/:language', (req, res) => {
 	const language = req.params.language
-	const psth = path.join(__dirname, '..', 'public', `${language}.html`
+	
+	const psth = path.join(__dirname, '..', 'public', /*`${language}.html`*/ 'home.html')
 	if (language === "de") {
 		res.sendFile(psth)
 	}
