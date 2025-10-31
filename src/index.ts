@@ -23,6 +23,13 @@ app.get('/blacklist=:nool', (req, res) => {
 	}
 })
 
+app.get('/:language', (req, res) => {
+	const language = req.params.language
+	const psth = path.join(__dirname, '..', 'public', `${language}.html`
+	if (language === "de") {
+		res.sendFile(psth)
+	}
+})
 app.use((err, req, res, next) => {
   console.error(err.stack)
   res.status(500).send(`Erro encontrado: ${err}`)
