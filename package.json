@@ -7,7 +7,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@types/express": "^5.0.0",
+    "@types/express": "^5.0.5",
     "express": "^5.1.0"
   },
   "devDependencies": {
