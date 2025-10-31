@@ -12,7 +12,7 @@ const app = express()
 
 app.get('/', (req, res) => {
  // res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))
-	res.redirect('/en')
+	res.redirect('/de')
 })
 
 app.get('/blacklist=:nool', (req, res) => {
