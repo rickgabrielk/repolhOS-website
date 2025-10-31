@@ -13,6 +13,15 @@ const app = express()
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))
 })
+
+app.get('/blacklist=:bool', (req, res) => {
+	const nool = req.params.bool
+	if (nool === true) {
+		const c = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
+		const err = `<br><br><br><h1>Parece que você se encontra numa pagina de blacklist</h1>`
+		res.send(err + c)
+		return
+})
 app.use((err, req, res, next) => {
   console.error(err.stack)
   res.status(500).send(`Erro encontrado: ${err}`)
