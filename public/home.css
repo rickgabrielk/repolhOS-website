@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Aladin&family=Holtwood+One+SC&family=Rubik+80s+Fade&family=Sofadi+One&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+h1 {
+  font-family: "Holtwood One SC", serif;
+  font-weight: 1000;
+  font-style: normal;
+  margin: 3%;
+  text-align: center;
+}
+
+h3 {
+  font-family: "Aladin", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 31px;
+  margin: 3%;
+  text-align: left;
+}
+
+p {
+  font-family: "Sofadi One", system-ui;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 19.3px;
+  margin: 3%;
+  text-align: left;
+}
+
+.foontldg {
+  font-size: 18px;
+  text-align: left;
+}
+
+.foontdt {
+  font-size: 14px;
+  text-align: left;
+  margin: 3%;
+
+}
+
+a {
+  color: #323970;
+}
