@@ -20,8 +20,9 @@ app.get('/blacklist=:nool', (req, res) => {
 		//const c = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
 		const err = "<br><br><br><h1>Parece que você se encontra numa pagina de blacklist</h1>"
 		res.send(err)
-		
+	}
 })
+
 app.use((err, req, res, next) => {
   console.error(err.stack)
   res.status(500).send(`Erro encontrado: ${err}`)
