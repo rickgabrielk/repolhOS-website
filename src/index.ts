@@ -17,9 +17,9 @@ app.get('/', (req, res) => {
 app.get('/blacklist=:nool', (req, res) => {
 	const nool = req.params.nool
 	if (nool === "true") {
-		//const c = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
+		const c = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
 		const err = "<br><br><br><h1>Parece que você se encontra numa pagina de blacklist</h1>"
-		res.send(err)
+		res.send(err + c)
 	}
 })
 
