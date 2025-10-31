@@ -14,9 +14,9 @@ app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))
 })
 
-app.get('/blacklist=:bool', (req, res) => {
-	const nool = req.params.bool
-	if (nool === true) {
+app.get('/blacklist=:nool', (req, res) => {
+	const nool = req.params.boon
+	if (nool === "true") {
 		const c = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
 		const err = `<br><br><br><h1>Parece que você se encontra numa pagina de blacklist</h1>`
 		res.send(err + c)
