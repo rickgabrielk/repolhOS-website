@@ -13,20 +13,6 @@ const app = express()
 app.get('/', (req, res) => {
   res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))
 })
-
-app.get('/portuguese', (req, res) => {
-  res.sendFile(path.join(__dirname, '..', 'public', 'a.html'))
-})
-
-app.get('/lang=?:lang/local=?:local', (req, res) =>
-	const lang = req.params.lang || "pt"
-	const local = req.params.local || "discord"
-    if (lang == "pt") {
-		  res.sendFile(path.join(__dirname, '..', 'public', 'a.html'))
-	else if (lang == "en") {
-		res.send('<h1> nao existe</h1>')
-	}
-})
 app.use((err, req, res, next) => {
   console.error(err.stack)
   res.status(500).send(`Erro encontrado: ${err}`)
