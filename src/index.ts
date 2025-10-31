@@ -25,13 +25,11 @@ app.get('/blacklist=:nool', (req, res) => {
 })
 
 
-app.get('/:language', (err, req, res, next) => {
+app.get('/:language', (req, res) => {
 	const language = req.params.language || "de"
-	const pth = path.join(__dirname, '..', 'public', 'home.html')
 	if (language === "de") {
-		res.sendFile(pth)
+		res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))
 	}
-	if (err) next()
 	
 })
 app.use((err, req, res, next) => {
