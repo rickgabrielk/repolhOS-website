@@ -19,7 +19,9 @@ app.get('/blacklist=:nool', (req, res) => {
 	const nool = req.params.nool
 	if (nool === "true") {
 		const c = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
-		const err = "<br><br><br><h1>Parece que você se encontra numa pagina de blacklist</h1>"
+		const currDate = new Date();
+		const dateStr: string = currDate.toDateString();
+		const err = "<br><br><br><h1>Parece que você se encontra numa pagina de blacklist</h1><br><h3>${dateStr}</h3>"
 		res.send(err + c)
 	}
 })
@@ -36,12 +38,16 @@ app.get('/:language', (req, res) => {
 })
 app.use((err, req, res, next) => {
   console.error(err.stack)
-  res.status(500).send(`<h1>Erro encontrado: ${err}</h1 `)
+  const currDate = new Date();
+  const dateStr: string = currDate.toDateString();
+  res.status(500).send(`<h1>Erro encontrado: ${err}</h1>` + dateStr)
 })
 
 app.use((req, res, next) => {
     const completeUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
     console.log(completeUrl);
+	const currDate = new Date();
+    const dateStr: string = currDate.toDateString();;
   // res.sendFile(path.join(__dirname, '..', 'public', '404.html'))
 //	res.status(404).send(`<h1>Pagina não encontrada</h1>
 //    <p>Url: ${completeUrl}</p>
@@ -76,6 +82,7 @@ res.status(404).type('html').send(`<!DOCTYPE html>
   <main>
     <h1>Erro 404</h1>
 	<p>${completeUrl}</p>
+	<p>${dateStr}</p>
     <h3>O camimnho não existe no site.</h3>
     <p><a href="https://repolh.de/">Caso queira retornar para pagina inicial do site.</a></p>
   </main>
