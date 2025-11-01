@@ -9,13 +9,21 @@ const app = express()
 
 
 // Home rou
-let ip;
+let ipa = 0
+let coletado = false
 
+app.get((err, req, res, next, ip) => {
+	if (coletado === true) {
+		res.send(`<br><br><br><br><br><h1>Parece que você não tem acesse site.</h1>`)
+	} else if (coletado === false) {
+		ipa = ip
+		coletado = true
+		res.redirect('/')
+	}
+})
 app.get('/', (req, res, ip) => {
  // res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))
  	res.redirect('/de')
-    if (ip === '192.168.0.012' || ip === '0.0.0.0') return true // trusted IPs
-    else return false
 })
 
 app.get('/blacklist=:nool', (req, res) => {
