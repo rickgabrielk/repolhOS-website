@@ -2,100 +2,100 @@ Importação  expresso De 'Express'
 Importação  Caminho De 'caminho'
 Importação  { Arquivo  Arquivo  URLTopata } De'Url'
 
-Const...  __Nome A sério?sério?  arquivo   A sério?sério? arquivo   =     Arquivo   URLTopathURLTopath(Importação.Meta.URL)
-..  __Dirname   =   Caminho.Nome   A sério?    cabelo    cabeloAsériosério?   A sério?  cabelo(__Nome A sério?   arquivodo   arquivo)
+Const...  __Nome A sério?sério?  arquivo   Asériosério?sério? arquivo   =     Arquivo   URLTopathURLTopath(Importação.Meta.URL)
+ ..   __Dirname    =    Caminho.Nome      A sério?          cabelo        cabeloAsériosério?       A. . sério   sério?     cabelo(__Nome A.  sério  sério?     arquivodo   arquivo)cabelo(__Nome A.  sério  sério?     arquivodo   arquivo)
 
-Const..  aplicação  =  expresso()
+  Const.. aplicação   =   expresso()aplicação   =   expresso()
 
 
 // Home rou
 
-aplicação.Apanhem-Se?.-Se?.('/' ,   (REQ ,   Res .  =>   {
- // res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))
-	Res...('/de')
+aplicação.Apanhem-Se?.-Se?.('/a'  ,    (REQ  ,    Res  .  =>    {Apanhem-Se?.-Se?.('/'  ,    (REQ  ,    Res  .  =>    {
+ // res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))// res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))
+	Res...('/de')Res...('/de')
 })
 
-.Apanhem-se.-se.('/',  (REQ,  Res.)  =>  {Apanhem-se.('/' ,   (REQ ,   Res .)  =>   {
-  contra   subdomíniossubdomínios =   req.subdomínios; const. const. Const. .  =   REQ.Subdomínios;
+.Apanhem-se.-se.('/' ,   (REQ ,   Res .)  =>   {Apanhem-se.('/'  ,    (REQ  ,    Res  .)  =>    {Apanhem-se.-se.('/' ,   (REQ ,   Res .)  =>   {Apanhem-se.('/'  ,    (REQ  ,    Res  .)  =>    {Apanhem-se.-se.('/' ,   (REQ ,   Res .)  =>   {Apanhem-se.('/'  ,    (REQ  ,    Res  .)  =>    {Apanhem-se.-se.('/' ,   (REQ ,   Res .)  =>   {Apanhem-se.('/'  ,    (REQ  ,    Res  .)  =>    {
+   contra     subdomíniossubdomínios =    req.subdomínios;  const.  const.  Const . .  =    REQ.Subdomínios;contra     subdomíniossubdomínios =    req.subdomínios;  const.  const.  Const . .  =    REQ.Subdomínios; 
 
- Se? (subdomínios.comprimento > 0)  { subdomínios...comprimento > 0  {  Se...  >  (  >  0) {
- Constenante = subdomínios[0]; Const. tenant inquilino = Subdomínios[0];
- Res.res.send(?Bem-  vindo    ao  subdomínio   ${tenant}); send(?Bem-  vindo      ao     subdomínio   ${tenant}); Res..Enviar(Bem- vindo    ao   ${Inquilino} subdomain Subdomínio
- }  mais   { } else {
-    res.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');
-   } }
+   Vês?  (subdomínios.comprimento  >  0)   { subdomínios... comprimento  >  0 { Se... > (   >   0)  {(subdomínios.comprimento  >  0)   { subdomínios... comprimento  >  0 { Se... > (   >   0)  {
+  Constenante  =  subdomínios[0]; const. const. tenant  Inquilino = Subdomínios[0];const.  tenant Inquilino =  Subdomínios[0];const.  tenant Inquilino =  Subdomínios[0];const. tenant Inquilino = Subdomínios[0];const. tenant Inquilino = Subdomínios[0];subdomínios[0]; const. const. tenant  Inquilino = Subdomínios[0];const.  tenant Inquilino =  Subdomínios[0];const.  tenant Inquilino =  Subdomínios[0];const. tenant Inquilino = Subdomínios[0];const. tenant Inquilino = Subdomínios[0];Constenante  =  subdomínios[0]; const. const. tenant  Inquilino = Subdomínios[0];const.  tenant Inquilino =  Subdomínios[0];const.  tenant Inquilino =  Subdomínios[0];const. tenant Inquilino = Subdomínios[0];const. tenant Inquilino = Subdomínios[0];subdomínios[0]; const. const. tenant  Inquilino = Subdomínios[0];const.  tenant Inquilino =  Subdomínios[0];const.  tenant Inquilino =  Subdomínios[0];const. tenant Inquilino = Subdomínios[0];const. tenant Inquilino = Subdomínios[0];
+ Res.res.send(?Bem -    vindo      ao  subdomínio   ${Inquilino}); enviar(?Bem -    vindo        ao     subdomínio   ${Inquilino}; Res..Enviar(Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}    subdomain Subdomíniores.  send(?Bem -    vindo      ao  subdomínio   ${Inquilino}); enviar(?Bem -    vindo        ao     subdomínio   ${Inquilino};  Res.res.send(?Bem -    vindo      ao  subdomínio   ${Inquilino}); enviar(?Bem -    vindo        ao     subdomínio   ${Inquilino}; Res..Enviar(Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}    subdomain Subdomíniores.  send(?Bem -    vindo      ao  subdomínio   ${Inquilino}); enviar(?Bem -    vindo        ao     subdomínio   ${Inquilino};   Res.res.send(?Bem -    vindo      ao  subdomínio   ${Inquilino}); enviar(?Bem -    vindo        ao     subdomínio   ${Inquilino}; Res..Enviar(Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}    subdomain Subdomíniores.  send(?Bem -    vindo      ao  subdomínio   ${Inquilino}); enviar(?Bem -    vindo        ao     subdomínio   ${Inquilino}; Res.. Res.res.send(?Bem -    vindo      ao  subdomínio   ${Inquilino}); enviar(?Bem -    vindo        ao     subdomínio   ${Inquilino}; Res..Enviar(Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}    subdomain Subdomíniores.  send(?Bem -    vindo      ao  subdomínio   ${Inquilino}); enviar(?Bem -    vindo        ao     subdomínio   ${Inquilino};  Res..Enviar(Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain Subdomínio 
+ }  mais   { } else {}    mais     { } else {
+ Res.  res.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');  send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao dRes.  res.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');  send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao dRes.  res.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');  send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao dRes.  res.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');  send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao do send(' res.send('Bem-send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');  send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao do send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');  send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao domínio principal') Res.); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');  ); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');  send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); 
+    } } } } 
 })
 
-aplicação.Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {
-	Const..   =  REQ.Paramas.Não..
-"	Verdadeiro...... (Não.  ===  "Verdadeiro") { "
-		Const.   =  `${REQ.Protocolo}://${REQ.:Apanhem
-  Const. Const. .  =   Novo! dataDate();. Const. .  =   Novo! dataDate();
+aplicação.Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {
+	Const..   =  REQ.Paramas.Não..Const..   =  REQ.Paramas.Não.. 
+ " Verdadeiro...... (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")  { "Verdadeiro...... (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro") { "(Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")   Verdadeiro......  (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")  { "Verdadeiro...... (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro") { "(Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")    Verdadeiro...... (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")  { "Verdadeiro...... (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro") { "(Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")   Verdadeiro...... (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")  { "Verdadeiro...... (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro") { "(Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")    { "Verdadeiro......   (Não.  ===  "Verdadeiro") { "
+  Const. = `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem   `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem    `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem   `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem    `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem   `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem     `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem   `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem    `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem   `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem    `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem   `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem     `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem   `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem     `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem   `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem    
+  Const. Const. .  =   Novo! dataDate();. Const. .  =   Novo! dataDate();Const. Const. .  =   Novo! dataDate();. Const. .  =   Novo! dataDate();   
 		Const. Const dateStr: string = string  =  Data atualatual.para  a corda de data a corda de data();
-  		Const. Const  =  "<br><br><br><h1>Parece que você se encontra numa pagina de blacklist</h1><br><h3>  ${dateStr}</h3>"${dateStr}</h3>"
- 		res.Enviar(Erro?  +  C..) 
+     		Const. Const  =  "<br><br><br><h1>Parece que você se encontra numa pagina de blacklist</h1><br><h3>    ${dateStr}</h3>"${dateStr}</h3>" 
+   		res.Enviar(Erro?  +  C..)   
 	}
 })
 
 
 aplicação.Apanhem-se.-se.('/:language',  (REQ,  Res.  =>  {
-	Const..   =  REQ.Paramas.Língua  ||  "de" 
-	Se... (Língua  ===  "de") { 
- 		res.enviar   Arquivo Arquivo (Caminho.Junte-se-se(__Dirname,  '..',  'Público',  'home.html')) 
-	} Mais?? { 
+  	Const..   =  REQ.Paramas.Língua  ||  "de"   
+  	Se... (Língua  ===  "de") {   
+   		res.enviar   Arquivo Arquivo (Caminho.Junte-se-se(__Dirname,  '..',  'Público',  'home.html'))   
+  	} Mais?? {   
 '/'
 	}
 	
 }
 app.Utilização((Erro?,  REQ,  Res.,  Próximo..)  =>  {
-   Console.Erro(Erro?.pilha) 
-   Const.. Data  atual  atual  =   Novo!! Data(); 
-   Const.. DataStr:  corda  =  Data atualatual.para a corda de data a corda de data(); 
-    Res..Estado(500).Enviar(  `   <${{>Erroencontradoencontrado??} >Erro encontrado:    $Erro encontrado:    $Erro encontrado:    $Erro   Str)>>encontradoencontrado:    $Erro encontrado:    $Erro encontrado:    ${Erro??}<h1>  +  dateStr)
+     Console.Erro(Erro?.pilha)   
+     Const.. Data  atual  atual  =   Novo!! Data();   
+     Const.. DataStr:  corda  =  Data atualatual.para a corda de data a corda de data();   
+      Res..Estado(500).Enviar(  `       Res..Estado(500).Enviar(  `   <${{>Erroencontradoencontrado??} > Erro   encontrado:    $Erro encontrado:    $Erro encontrado:    $Erro   Str)>>encontradoencontrado:    $Erro encontrado:    $Erro encontrado:    ${Erro??}<h1>  +  dateStr) ${{>Erroencontradoencontrado??} >Erro  encontrado:    $Erro encontrado:    $Erro encontrado:    $Erro   Str)>>encontradoencontrado:    $Erro encontrado:    $Erro encontrado:    ${Erro??{Erro??}<h1>  +  dateStr)
 }))
 
 aplicação
 `const completeUrl = {REQ.}:://
     Console.Log(Completo UrlUrl);
- 	Const.. 	Const.. Data atual  atual  =  Novo!! Data();  atual  atual  =  Novo!! Data();  
-      Const..      Const.. DataStr:  corda  =  Data atualatual.para a corda de data a corda de data();; :  corda  =  Data atualatual.para a corda de data a corda de data();;  
+   	Const.. 	Const.. Data atual  atual  =  Novo!! Data();  atual  atual  =  Novo!! Data();    
+        Const..      Const.. DataStr:  corda  =  Data atualatual.para a corda de data a corda de data();; :  corda  =  Data atualatual.para a corda de data a corda de data();;    
   // res.sendFile(path.join(__dirname, '..', 'public', '404.html'))
-//	res.status(404).send(`<h1>Pagina não encontrada</h1><h1>Pagina não encontrada</h1><h1>Pagina não encontrada</h1><h1>Pagina não encontrada</h1>
+//	res.status(404).send(`//	res.status(404).send(`<h1>Pagina não encontrada</h1><h1>Pagina não encontrada</h1><h1>Pagina não encontrada</h1><h1>Pagina não encontrada</h1>h1>Pagina não encontrada</h1><h1>Pagina não encontrada</h1><h1>Pagina não encontrada</h1><h1>Pagina não encontrada</h1>
 // <p>Url: ${completoUrl}</p>
 //    <h3>Volte para pagina inicial pelo link a seguir <a href="https://repolh.de/">Home</a></h3>`)
-..Estado(404).Tipo('HTML').Enviar(<<! <<!  Médico > HTML>
-<HTML>
-<<Cabeça>>
-   < < Meta Charset="UTF-8">  Charset="UTF-8">
-   < < Meta Nome="Visualização" content="largura = largura do dispositivo, escala inicial = 1">  Nome="Visualização" content="width=device-Conteúdo=initial-scale=1">
-    <   < Título>404 Erro</título>> 404 Erro</>  
-</<Cabeça>>
-<<Corpo>>
-   < < estilo> >
-     H1 {  {
-          cor:   #ff0000; :  #ff0000; :  #ff0000; :  #ff00;#ff0000;
-          Tamanho    Tamanho  da  fonte:    Tamanho   Tamanho  da  fonte fonte fonte fonte:     Tamanho   da fonte  fonte fonte fonte fonte fonte fonte:   Tamanho    56px; -Tamanho:  56px;
-        Margem:  17%;
-         } 
-     H3 { {
-              color:  #CETO 40; :  #FCE040; 
-        preenchimento:  5%; :  5%;
+..Estado(404).Tipo('HTML').Enviar(<<! <<!  Médico > HTML>Estado(404).Tipo('HTML').Enviar(<<! <<!  Médico > HTML>Estado(404).Tipo('HTML').Enviar(<<! <<!  Médico > HTML>Estado(404).Tipo('HTML').Enviar(<<! <<!  Médico > HTML>Estado(404).Tipo('HTML').Enviar(<<! <<!  Médico > HTML>Estado(404).Tipo('HTML').Enviar(<<! <<!  Médico > HTML>
+<
+<<Cabeça>>Cabeça>>Cabeça>>Cabeça>>Cabeça>>Cabeça>>
+    < <  Meta Charset="UTF-8">  Charset="UTF-8">
+      < <  largura = l"Visualização"  content="largura = largura "largura = largura  "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1" largura = largura   "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1"">  Nome="">  Nome="Visualização" content=""">  Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"  content="largura = l  < <   < < MetaMeta   Nome= "Visualização"  content="largura = largura "largura = largura  "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1" largura = largura   "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1"">  Nome="">  Nome="Visualização" content=""">  Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"  content="  < <   < < MetaMeta   Nome= "Visualização"  content="largura = largura "largura = largura  "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1" largura = largura   "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1"">  Nome="">  Nome="Visualização" content=""">  Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"  content="  Meta    Nome=  "Visualização"   content="largura = largura "largura = largura  "largura = largura   do  dispositivo,  escala inicial = 1   dispositivo,   escala inicial = 1 " largura = largura   "largura = largura   do  dispositivo,  escala inicial = 1   dispositivo,   escala inicial = 1 "">  Nome="">   Nome="">   Nome="Visualização"  content=""">   Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"   content="largura = l   < < Meta    Nome=  "Visualização"   content="largura = largura "largura = largura  "largura = largura   do  dispositivo,  escala inicial = 1   dispositivo,   escala inicial = 1 " largura = largura   "largura = largura   do  dispositivo,  escala inicial = 1   dispositivo,   escala inicial = 1 "">  Nome="">  Nome="Visualização" content=""">   Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"   content="largura = l    < < Meta   Nome= "Visualização"  content="largura = largura "largura = largura  "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1" largura = largura   "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1"">  Nome="">  Nome="Visualização" content=""">  Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"  content="largura = l   < < Meta   Nome= "Visualização"  content="largura = largura "largura = largura  "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1" largura = largura   "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1"">  Nome="">  Nome="Visualização" content=""">  Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"  content="largura = l  argura  do   dispositivo,   escala  inicial = 1">  Nome="Visualização" Conteúdo="width=device-Conteúdo=initial-scale=1">" content="width=Conteúdo-Nome="Visualização" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"   content="largura = largura   do   dispositivo,   escala  inicial = 1">  Nome="Visualização" Conteúdo="width=device-Conteúdo=initial-scale=1">
+       <   <  Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</ >   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>    Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>      <   <  Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</ >   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>    Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>     
+</<
+<<
+      < <  estilo> > estilo> > estilo> > estilo> > estilo> > estilo> > estilo> > estilo> >  estilo> > estilo> > estilo> > estilo> >   
+ H1 {} 
+             cor:      
+                 Tamanho    Tamanho  da  fonte:    Tamanho    :       Tamanho    Tamanho  da  fonte:    Tamanho   Tamanho  da  fonte fonte fonte fonte:       nte fonte fonte:   Tamanho        56px; 56px; -Tamanho:  56px; Tamanho   da fonte  fonte fonte fonte fonte fonte fonte:   Tamanho        56px; 56px; -Tamanho:  56 px; Tamanho     Tamanho  da  fonte:     Tamanho    Tamanho  da  fonte  Tamanho    Tamanho  da  fonte:    Tamanho   Tamanho  da  fonte fonte fonte fonte:        Tamanho    Tamanho  da  fonte:    Tamanho   Tamanho  da  fonte fonte fonte fonte:       Tamanho    Tamanho  da  fonte:    Tamanho   Tamanho  da  fonte fonte fonte fonte:       nte fonte fonte:   Tamanho          Tamanho    Tamanho  da  fonte:    Tamanho   Tamanho  da  fonte fonte fonte fonte:        Tamanho    Tamanho  da  fonte:    Tamanho   Tamanho  da  fonte fonte fonte fonte:       Tamanho    Tamanho  da  fonte:    Tamanho   Tamanho  da  fonte fonte fonte fonte:       nte fonte fonte:   Tamanho        56px; 56px; -Tamanho:  56px; Tamanho   da fonte  fonte fonte fonte fonte fonte fonte:   Tamanho        56Tamanho :  56 px; Tamanho     Tamanho  da  fonte:     Tamanho    Tamanho  da  fonte   Tamanho    Tamanho  da  fonte:    Tamanho   Tamanho  da  fonte fonte fonte fonte:       Tamanho    Tamanho  da  fonte:    Tamanho   Tamanho  da  fonte fonte fonte fonte:          :        Tamanho    Tamanho  da  fonte:    Tamanho   Tamanho  da  fonte fonte fonte fonte:       Tamanho    Tamanho  da  fonte:    Tamanho   Tamanho  da  fonte fonte fonte fonte:       nte fonte fonte:   Tamanho        56px; 56px; -Tamanho:  56px; Tamanho   da fonte  fonte fonte fonte fonte fonte fonte:   Tamanho        56px; 56px; -Tamanho:  56 px; Tamanho     Tamanho  da  fonte:     Tamanho    Tamanho  da  fonte   Tamanho    Tamanho  da  fonte:    Tamanho   Tamanho  da  fonte fonte fonte fonte:       Tamanho    Tamanho  da  fonte:    Tamanho   Tamanho  da  fonte fonte fonte fonte:         Tamanho    Tamanho  da  fonte:    Tamanho   Tamanho  da  fonte fonte fonte fonte:       Tamanho  da  fonte fonte fonte fonte:     Tamanho   da fonte  fonte fonte fonte fonte fonte fonte:   Tamanho     56px; - Tamanho    Tamanho  da  fonte:    Tamanho   Tamanho  da  fonte fonte fonte fonte:     Tamanho   da fonte  fon   fonte fonte fonte:      Tamanho   da fonte  fonte fonte fonte fonte fonte  fonte:    Tamanho       Tamanho    Tamanho  da   fonte:     Tamanho    Tamanho   da fonte  fonte fonte fonte fonte fonte fonte:   Tamanho        56px; 56px; -Tamanho:  56px; Tamanho   da fonte  fonte fonte fonte fonte fonte fonte:   Tamanho        56px; 56px; -Tamanho :  56px; Tamanho     Tamanho  da  fonte:     Tamanho    Tamanho  da  fonte  fonte fonte fonte:     Tamanho   da fonte  fonte fonte fonte fonte fonte fonte:   Tamanho   Tamanho    Tamanho  da  fonte:    Tamanho   Tamanho  da  fonte fonte fonte fonte:       Tamanho    Tamanho  da  fonte:    Tamanho   Tamanho  da  fonte fonte fonte fonte:       
+             Margem:  17%;  Margem:  17%;   Margem:  17%;   Margem:  17%;  Margem:  17%;  Margem:  17%;    Margem:  17%;   Margem:  17%;   Margem:  17%;  Margem:  17%;  Margem:  17%;    Margem:  17%;  Margem:  17%;   Margem:  17%;   Margem:  17%;  Margem:  17%;  Margem:  17%;    
+          }  
+ H3 
+                 color:  ##CETO 40; :  #FCE040;  color:  #CETO CETO; :  #FCE040;   color:  #CETO  40; :  #FCE040;   
+            preenchimento:  5%; :  5%; preenchimento:  5%; :  5%; 5%; preenchimento:  5%; :  5%; preenchimento:  5%; :  5%;  5%; preenchimento:  5%; :  5%; 5%; preenchimento:  5%; :  5%; preenchimento:  5%; :  5%;   5%; preenchimento:  5%; :  5%; 5%; preenchimento:  5%; :  5%; preenchimento:  5%; :  5%;  5%; preenchimento:  5%; :  5%; 5%; preenchimento:  5%; :  5%; preenchimento:  5%; :  5%;   
       
-         } 
+          }  
      A. . { {
-       Acondicionamento: 5%; :  5%;
-              cor: #FCE040; :  #FCE040; 
+          Acondicionamento: 5%; :  5%;   Acondicionamento: 5%; :  5%;  Acondicionamento: 5%; :  5%;  Acondicionamento: 5%; :  5%;  Acondicionamento: 5%; :  5%;  
+   : #FCE040; :  #FCE040;    cor: #FCE040; :  #FCE040;    cor: #FCE040; :  #FCE040;     cor : #FCE040; :  #FCE040;    cor: #FCE040; :  #FCE040;     
          } 
-      Corpo   { {
-       Fundode  fundofundo: #999999; -color: #999999;
+           Corpo     { { { { Corpo     { { { { Corpo      
+                   Fundode    Fundode: # 999999Fundode: #  Fundode: # 999999; 
          } 
-   </ < /estilo> >
+    </ <  estilo> > /estilo> > /
    < < 
       <     < 
 << 
-	<P..>${dateStr}</P.>
-    <H3>O camimnho não existe no site.</h3>
-    <P..><a href="https://repolh.de/">Caso queira retornar para pagina inicial do site.</a></p>
+< P..>${dateStr}</P.>
+      < H3>O camimnho não existe no site.</h3> H3>O camimnho  não  existe  no site.</h3> H3>O camimnho não existe no site.</h3> H3>O camimnho  não  existe  no site.</h3>
+       <P..><a href="https://repolh.de/">Caso queira retornar para pagina  inicial   Caso  queira retornar para   P..><a href="https://repolh.de/">Caso queira retornar para pagina  inicial   Caso  queira retornar para  a   sitesite.</ P..><a href="https://repolh.de/">Caso queira retornar para pagina  inicial   Caso  queira retornar para   P..><a href="https://repolh.de/">Caso queira retornar para pagina  inicial   Caso  queira retornar para  a   sitesite.</Caso queira retornar para pagina  inicial   Caso  queira retornar para  a   sitesite.</https://repolh.de/">Caso queira retornar para pagina  inicial  inicial  do  site.</a></p>
   <Principal
 <Corpo
 <`)
