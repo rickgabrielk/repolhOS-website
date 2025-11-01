@@ -29,6 +29,8 @@ app.get('/:language', (req, res) => {
 	const language = req.params.language || "de"
 	if (language === "de") {
 		res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))
+	} else {
+		res.redirect('/')
 	}
 	
 })
@@ -79,6 +81,7 @@ res.status(404).type('html').send(`<!DOCTYPE html>
   </main>
 </body>
 </html>`)
+	
 })
 /*app.get('/', (req, res) => {
   const text = req.params.text
