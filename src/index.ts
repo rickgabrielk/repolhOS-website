@@ -10,6 +10,17 @@ const app = express()
 
 // Home rou
 
+app.get('/a', (req, res) => {
+  const subdomains = req.subdomains;
+
+  if (subdomains.length > 0) {
+    const tenant = subdomains[0];
+    res.send(`Welcome to the ${tenant} subdomain`);
+  } else {
+    res.send('Welcome to the main domain');
+  }
+})
+
 app.get('/', (req, res) => {
  // res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))
 	res.redirect('/de')
