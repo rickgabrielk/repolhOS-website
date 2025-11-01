@@ -8,19 +8,7 @@ const __dirname = path.dirname(__filename)
 const app = express()
 
 
-// Home rou
-let ipa = 0
-let coletado = false
-
-app.get((err, req, res, next, ip) => {
-	if (coletado === true) {
-		res.send(`<br><br><br><br><br><h1>Parece que você não tem acesse site.</h1>`)
-	} else if (coletado === false) {
-		ipa = ip
-		coletado = true
-		res.redirect('/')
-	}
-})
+// Home roulet ipa = 0let coletado = fals
 app.get('/', (req, res, ip) => {
  // res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))
  	res.redirect('/de')
