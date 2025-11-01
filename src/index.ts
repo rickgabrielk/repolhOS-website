@@ -16,7 +16,7 @@ app.get('/', (req, res, ip) => {
  	res.redirect('/de')
     if (ip === '192.168.0.012' || ip === '0.0.0.0') return true // trusted IPs
     else return false
-
+})
 
 app.get('/blacklist=:nool', (req, res) => {
 	const nool = req.params.nool
