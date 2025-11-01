@@ -1,73 +1,328 @@
-Importação  expresso De 'Express'
-Importação  Caminho De 'caminho'
-Importação  { Arquivo  Arquivo  URLTopata } De'Url'
+import express from 'express'
+import path from 'path'
+import { fileURLToPath } from 'url'
 
-Const...  __Nome A sério?sério?  arquivo   Asériosério?sério? arquivo   =     Arquivo   URLTopathURLTopath(Importação.Meta.URL)
- ..   __Dirname    =    Caminho.Nome      A sério?          cabelo        cabeloAsériosério?       A. . sério   sério?     cabelo(__Nome A.  sério  sério?     arquivodo   arquivo)cabelo(__Nome A.  sério  sério?     arquivodo   arquivo)
+const __filename = fileURLToPath(import.meta.url)
+const __dirname = path.dirname(__filename)
 
-  Const.. aplicação   =   expresso()aplicação   =   expresso()
+const app = express()
 
 
 // Home rou
 
-aplicação.Apanhem-Se?.-Se?.('/a'  ,    (REQ  ,    Res  .  =>    {Apanhem-Se?.-Se?.('/'  ,    (REQ  ,    Res  .  =>    {
- // res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))// res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))
-	Res...('/de')Res...('/de')
+app.get('/', (req, res) => {
+ // res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))
+	res.redirect('/de')
 })
 
-.Apanhem-se.-se.('/' ,   (REQ ,   Res .)  =>   {Apanhem-se.('/'  ,    (REQ  ,    Res  .)  =>    {Apanhem-se.-se.('/' ,   (REQ ,   Res .)  =>   {Apanhem-se.('/'  ,    (REQ  ,    Res  .)  =>    {Apanhem-se.-se.('/' ,   (REQ ,   Res .)  =>   {Apanhem-se.('/'  ,    (REQ  ,    Res  .)  =>    {Apanhem-se.-se.('/' ,   (REQ ,   Res .)  =>   {Apanhem-se.('/'  ,    (REQ  ,    Res  .)  =>    {
-   contra     subdomíniossubdomínios =    req.subdomínios;  const.  const.  Const . .  =    REQ.Subdomínios;contra     subdomíniossubdomínios =    req.subdomínios;  const.  const.  Const . .  =    REQ.Subdomínios; 
-
-   Vês?  (subdomínios.comprimento  >  0)   { subdomínios... comprimento  >  0 { Se... > (   >   0)  {(subdomínios.comprimento  >  0)   { subdomínios... comprimento  >  0 { Se... > (   >   0)  {
-  Constenante  =  subdomínios[0]; const. const. tenant  Inquilino = Subdomínios[0];const.  tenant Inquilino =  Subdomínios[0];const.  tenant Inquilino =  Subdomínios[0];const. tenant Inquilino = Subdomínios[0];const. tenant Inquilino = Subdomínios[0];subdomínios[0]; const. const. tenant  Inquilino = Subdomínios[0];const.  tenant Inquilino =  Subdomínios[0];const.  tenant Inquilino =  Subdomínios[0];const. tenant Inquilino = Subdomínios[0];const. tenant Inquilino = Subdomínios[0];Constenante  =  subdomínios[0]; const. const. tenant  Inquilino = Subdomínios[0];const.  tenant Inquilino =  Subdomínios[0];const.  tenant Inquilino =  Subdomínios[0];const. tenant Inquilino = Subdomínios[0];const. tenant Inquilino = Subdomínios[0];subdomínios[0]; const. const. tenant  Inquilino = Subdomínios[0];const.  tenant Inquilino =  Subdomínios[0];const.  tenant Inquilino =  Subdomínios[0];const. tenant Inquilino = Subdomínios[0];const. tenant Inquilino = Subdomínios[0];
- Res.res.send(?Bem -    vindo      ao  subdomínio   ${Inquilino}); enviar(?Bem -    vindo        ao     subdomínio   ${Inquilino}; Res..Enviar(Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}    subdomain Subdomíniores.  send(?Bem -    vindo      ao  subdomínio   ${Inquilino}); enviar(?Bem -    vindo        ao     subdomínio   ${Inquilino};  Res.res.send(?Bem -    vindo      ao  subdomínio   ${Inquilino}); enviar(?Bem -    vindo        ao     subdomínio   ${Inquilino}; Res..Enviar(Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}    subdomain Subdomíniores.  send(?Bem -    vindo      ao  subdomínio   ${Inquilino}); enviar(?Bem -    vindo        ao     subdomínio   ${Inquilino};   Res.res.send(?Bem -    vindo      ao  subdomínio   ${Inquilino}); enviar(?Bem -    vindo        ao     subdomínio   ${Inquilino}; Res..Enviar(Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}    subdomain Subdomíniores.  send(?Bem -    vindo      ao  subdomínio   ${Inquilino}); enviar(?Bem -    vindo        ao     subdomínio   ${Inquilino}; Res.. Res.res.send(?Bem -    vindo      ao  subdomínio   ${Inquilino}); enviar(?Bem -    vindo        ao     subdomínio   ${Inquilino}; Res..Enviar(Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}    subdomain Subdomíniores.  send(?Bem -    vindo      ao  subdomínio   ${Inquilino}); enviar(?Bem -    vindo        ao     subdomínio   ${Inquilino};  Res..Enviar(Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain SubdomínioEnviar (Bem- vindo    ao   ${Inquilino}   subdomain Subdomínio 
- }  mais   { } else {}    mais     { } else {
- Res.  res.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');  send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao dRes.  res.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');  send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao dRes.  res.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');  send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao dRes.  res.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');  send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao do send(' res.send('Bem-send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');  send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao do send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');  send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); send('Bem-vindo ao domínio principal') Res.); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');  ); res.send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain');  send('Welcome to the main domain');.send('Bem-vindo ao domínio principal'); res.send('Welcome to the main domain'); 
-    } } } } 
-})
-
-aplicação.Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {Apanhem-se.-se.('/lista negra=:nool',  (REQ,  Res.  =>  {
-	Const..   =  REQ.Paramas.Não..Const..   =  REQ.Paramas.Não.. 
- " Verdadeiro...... (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")  { "Verdadeiro...... (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro") { "(Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")   Verdadeiro......  (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")  { "Verdadeiro...... (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro") { "(Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")    Verdadeiro...... (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")  { "Verdadeiro...... (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro") { "(Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")   Verdadeiro...... (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")   { "Verdadeiro......   (Não.  ===  "Verdadeiro")  { "Verdadeiro...... (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro") { "(Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")  { "Verdadeiro......  (Não.  ===  "Verdadeiro")    { "Verdadeiro......   (Não.  ===  "Verdadeiro") { "
-  Const. = `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem   `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem    `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem   `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem    `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem   `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem     `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem   `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem    `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem   `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem    `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem   `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem     `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem   `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem     `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem   `${REQ.Protocolo}://${REQ.:Apanhem `${REQ.Protocolo}://${REQ.:Apanhem    
-  Const. Const. .  =   Novo! dataDate();. Const. .  =   Novo! dataDate();Const. Const. .  =   Novo! dataDate();. Const. .  =   Novo! dataDate();   
-		Const. Const dateStr: string = string  =  Data atualatual.para  a corda de data a corda de data();
-     		Const. Const  =  "<br><br><br><h1>Parece que você se encontra numa pagina de blacklist</h1><br><h3>    ${dateStr}</h3>"${dateStr}</h3>" 
-   		res.Enviar(Erro?  +  C..)   
+app.get('/blacklist=:nool', (req, res) => {
+	const nool = req.params.nool
+	if (nool === "true") {
+		const c = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
+		const currDate = new Date();
+		const dateStr: string = currDate.toDateString();
+		const err = "<br><br><br><h1>Parece que você se encontra numa pagina de blacklist</h1><br><h3>${dateStr}</h3>"
+		res.send(err + c)
 	}
 })
 
 
-aplicação.Apanhem-se.-se.('/:language',  (REQ,  Res.  =>  {
-  	Const..   =  REQ.Paramas.Língua  ||  "de"   
-  	Se... (Língua  ===  "de") {   
-   		res.enviar   Arquivo Arquivo (Caminho.Junte-se-se(__Dirname,  '..',  'Público',  'home.html'))   
-  	} Mais?? {   
-'/'
+app.get('/:language', (req, res) => {
+	const language = req.params.language || "de"
+	if (language === "de") {
+		res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))
+	} else {
+		res.redirect('/')
 	}
 	
-}
-app.Utilização((Erro?,  REQ,  Res.,  Próximo..)  =>  {
-     Console.Erro(Erro?.pilha)   
-     Const.. Data  atual  atual  =   Novo!! Data();   
-     Const.. DataStr:  corda  =  Data atualatual.para a corda de data a corda de data();   
-      Res..Estado(500).Enviar(  `       Res..Estado(500).Enviar(  `   <${{>Erroencontradoencontrado??} > Erro   encontrado:    $Erro encontrado:    $Erro encontrado:    $Erro   Str)>>encontradoencontrado:    $Erro encontrado:    $Erro encontrado:    ${Erro??}<h1>  +  dateStr) ${{>Erroencontradoencontrado??} >Erro  encontrado:    $Erro encontrado:    $Erro encontrado:    $Erro   Str)>>encontradoencontrado:    $Erro encontrado:    $Erro encontrado:    ${Erro??{Erro??}<h1>  +  dateStr)
-}))
+})
+app.use((err, req, res, next) => {
+  console.error(err.stack)
+  const currDate = new Date();
+  const dateStr: string = currDate.toDateString();
+  res.status(500).send(`<h1>Erro encontrado: ${err}</h1>` + dateStr)
+})
 
-aplicação
-`const completeUrl = {REQ.}:://
-    Console.Log(Completo UrlUrl);
-   	Const.. 	Const.. Data atual  atual  =  Novo!! Data();  atual  atual  =  Novo!! Data();    
-        Const..      Const.. DataStr:  corda  =  Data atualatual.para a corda de data a corda de data();; :  corda  =  Data atualatual.para a corda de data a corda de data();;    
+app.use((req, res, next) => {
+    const completeUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
+    console.log(completeUrl);
+	const currDate = new Date();
+    const dateStr: string = currDate.toDateString();;
   // res.sendFile(path.join(__dirname, '..', 'public', '404.html'))
-//	res.status(404).send(`//	res.status(404).send(`<h1>Pagina não encontrada</h1><h1>Pagina não encontrada</h1><h1>Pagina não encontrada</h1><h1>Pagina não encontrada</h1>h1>Pagina não encontrada</h1><h1>Pagina não encontrada</h1><h1>Pagina não encontrada</h1><h1>Pagina não encontrada</h1>
-// <p>Url: ${completoUrl}</p>
+//	res.status(404).send(`<h1>Pagina não encontrada</h1>
+//    <p>Url: ${completeUrl}</p>
 //    <h3>Volte para pagina inicial pelo link a seguir <a href="https://repolh.de/">Home</a></h3>`)
-..Estado(404).Tipo('HTML').Enviar(<<! <<!  Médico > HTML>Estado(404).Tipo('HTML').Enviar(<<! <<!  Médico > HTML>Estado(404).Tipo('HTML').Enviar(<<! <<!  Médico > HTML>Estado(404).Tipo('HTML').Enviar(<<! <<!  Médico > HTML>Estado(404).Tipo('HTML').Enviar(<<! <<!  Médico > HTML>Estado(404).Tipo('HTML').Enviar(<<! <<!  Médico > HTML>
-<
-<<Cabeça>>Cabeça>>Cabeça>>Cabeça>>Cabeça>>Cabeça>>
-    < <  Meta Charset="UTF-8">  Charset="UTF-8">
-      < <  largura = l"Visualização"  content="largura = largura "largura = largura  "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1" largura = largura   "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1"">  Nome="">  Nome="Visualização" content=""">  Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"  content="largura = l  < <   < < MetaMeta   Nome= "Visualização"  content="largura = largura "largura = largura  "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1" largura = largura   "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1"">  Nome="">  Nome="Visualização" content=""">  Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"  content="  < <   < < MetaMeta   Nome= "Visualização"  content="largura = largura "largura = largura  "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1" largura = largura   "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1"">  Nome="">  Nome="Visualização" content=""">  Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"  content="  Meta    Nome=  "Visualização"   content="largura = largura "largura = largura  "largura = largura   do  dispositivo,  escala inicial = 1   dispositivo,   escala inicial = 1 " largura = largura   "largura = largura   do  dispositivo,  escala inicial = 1   dispositivo,   escala inicial = 1 "">  Nome="">   Nome="">   Nome="Visualização"  content=""">   Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"   content="largura = l   < < Meta    Nome=  "Visualização"   content="largura = largura "largura = largura  "largura = largura   do  dispositivo,  escala inicial = 1   dispositivo,   escala inicial = 1 " largura = largura   "largura = largura   do  dispositivo,  escala inicial = 1   dispositivo,   escala inicial = 1 "">  Nome="">  Nome="Visualização" content=""">   Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"   content="largura = l    < < Meta   Nome= "Visualização"  content="largura = largura "largura = largura  "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1" largura = largura   "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1"">  Nome="">  Nome="Visualização" content=""">  Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"  content="largura = l   < < Meta   Nome= "Visualização"  content="largura = largura "largura = largura  "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1" largura = largura   "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1"">  Nome="">  Nome="Visualização" content=""">  Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"  content="largura = l  argura  do   dispositivo,   escala  inicial = 1">  Nome="Visualização" Conteúdo="width=device-Conteúdo=initial-scale=1">" content="width=Conteúdo-Nome="Visualização" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"   content="largura = largura   do   dispositivo,   escala  inicial = 1">  Nome="Visualização" Conteúdo="width=device-Conteúdo=initial-scale=1">
+res.status(404).type('html').send(`<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 Erro</title>
+</head>
+<body>
+  <style>
+    h1 {
+      color: #ff0000;
+      font-size: 56px;
+      margin: 17%;
+    }
+    h3 {
+      color: #FCE040;
+      padding: 5%;
+      
+    }
+    a {
+      padding: 5%;
+      color: #FCE040;
+    }
+    body {
+      background-color: #999999;
+    }
+  </style>
+  <main>
+    <h1>Erro 404</h1>
+	<p>${completeUrl}</p>
+	<p>${dateStr}</p>
+    <h3>O camimnho não existe no site.</h3>
+    <p><a href="https://repolh.de/">Caso queira retornar para pagina inicial do site.</a></p>
+  </main>
+</body>
+</html>`)
+	
+})
+/*app.get('/', (req, res) => {
+  const text = req.params.text
+  res.status(400).send(`<h1>📌 Nosso site está com problema ao carregar os textos.</h1>`)
+})*/
+// Criando api
+/*app.get('/:a/:b', (req, res) => {
+ // Gdrando o texto 
+  const a = req.params.a 
+  const b = req.params.b
+  // Removendo o - do texto
+  const aa = a.replace(/-/g, " ").replace(/\?/g, "?").replace(/\!/g, "!").replace(/\./g, ".").replace(/,/g, ",")
+
+  const bb = b.replace(/-/g, " ").replace(/\?/g, "?").replace(/\!/g, "!").replace(/\./g, ".").replace(/,/g, ",")
+
+  res.type('html').send(`<!DOCTYPE html>
+  <html>
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Meme</title>
+  </head>
+  <body>
+	<header>Zuando e polemicando na internet de IA</header>
+	<main>
+		<h1>${aa}</h1>
+		<p>${bb}</p>
+		<br>
+		<p><strong>Todo conteúdo postado nessa pagina é da responsabilidade de quem postou e não minha, pois isso aqui é publico e qualquer um pode colocar merd aqui.</strong></p>
+	</main>
+	<style>
+	h1 {
+		color: #fffff1;
+		font-size: 3.5rem;
+		
+	}
+	p, footer {
+		color: #7DFF31;
+		font-size: 18px;
+	}
+	header {
+		color: #000;
+		font-size: 23px;
+	}
+	body {
+		background-color: #62ABFF;
+	}
+	</style>
+  </body>
+  </html>`)
+})*/
+// Corrected language route
+/*app.get('/hello/:text/lang=:id', (req, res) => {
+  const text = req.params.text || 
+  const id = req.params.id || "p// This was incorrectly set to req.params.text
+
+  if (id === "pt") {
+    res.send(`Seu texto: |${text}|`)
+  } else if (id === "en") {
+    res.send(`Text: |${text}|`)
+  } else {
+    res.status(400).send('<h1>Erro: Idioma não suportado</h1>')
+  }
+})
+*/
+/*
+// About page - Uncomment if needed
+app.get('/about', function (req, res) {
+  res.sendFile(path.join(__dirname, '..', 'components', 'about.htm'))
+})
+
+// Example API endpoint - JSON
+app.get('/api-data', (req, res) => {
+  res.json({
+    message: 'Here is some sample API data',
+    items: ['apple', 'banana', 'cherry'],
+  })
+})
+
+// Health check
+app.get('/healthz', (req, res) => {
+  res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() })
+})
+*/
+
+export default app
+app.get('/:language', (req, res) => {
+	const language = req.params.language || "de"
+	if (language === "de") {
+		res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))
+	} else {
+		res.redirect('/')
+	}
+	
+})
+app.use((err, req, res, next) => {
+  console.error(err.stack)
+  const currDate = new Date();
+  const dateStr: string = currDate.toDateString();
+  res.status(500).send(`<h1>Erro encontrado: ${err}</h1>` + dateStr)
+})
+
+app.use((req, res, next) => {
+    const completeUrl = `${req.protocol}://${req.get('host')}${req.originalUrl}`;
+    console.log(completeUrl);
+	const currDate = new Date();
+    const dateStr: string = currDate.toDateString();;
+  // res.sendFile(path.join(__dirname, '..', 'public', '404.html'))
+//	res.status(404).send(`<h1>Pagina não encontrada</h1>
+//    <p>Url: ${completeUrl}</p>
+//    <h3>Volte para pagina inicial pelo link a seguir <a href="https://repolh.de/">Home</a></h3>`)
+res.status(404).type('html').send(`<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>404 Erro</title>
+</head>
+<body>
+  <style>
+    h1 {
+      color: #ff0000;
+      font-size: 56px;
+      margin: 17%;
+    }
+    h3 {
+      color: #FCE040;
+      padding: 5%;
+      
+    }
+    a {
+      padding: 5%;
+      color: #FCE040;
+    }
+    body {
+      background-color: #999999;
+    }
+  </style>
+  <main>
+    <h1>Erro 404</h1>
+	<p>${completeUrl}</p>
+	<p>${dateStr}</p>
+    <h3>O camimnho não existe no site.</h3>
+    <p><a href="https://repolh.de/">Caso queira retornar para pagina inicial do site.</a></p>
+  </main>
+</body>
+</html>`)
+	
+})
+/*app.get('/', (req, res) => {
+  const text = req.params.text
+  res.status(400).send(`<h1>📌 Nosso site está com problema ao carregar os textos.</h1>`)
+})*/
+// Criando api
+/*app.get('/:a/:b', (req, res) => {
+ // Gdrando o texto 
+  const a = req.params.a 
+  const b = req.params.b
+  // Removendo o - do texto
+  const aa = a.replace(/-/g, " ").replace(/\?/g, "?").replace(/\!/g, "!").replace(/\./g, ".").replace(/,/g, ",")
+
+  const bb = b.replace(/-/g, " ").replace(/\?/g, "?").replace(/\!/g, "!").replace(/\./g, ".").replace(/,/g, ",")
+
+  res.type('html').send(`<!DOCTYPE html>
+  <html>
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Meme</title>
+  </head>
+  <body>
+	<header>Zuando e polemicando na internet de IA</header>
+	<main>
+		<h1>${aa}</h1>
+		<p>${bb}</p>
+		<br>
+		<p><strong>Todo conteúdo postado nessa pagina é da responsabilidade de quem postou e não minha, pois isso aqui é publico e qualquer um pode colocar merd aqui.</strong></p>
+	</main>
+	<style>
+	h1 {
+		color: #fffff1;
+		font-size: 3.5rem;
+		
+	}
+	p, footer {
+		color: #7DFF31;
+		font-size: 18px;
+	}
+	header {
+		color: #000;
+		font-size: 23px;
+	}
+	body {
+		background-color: #62ABFF;
+	}
+	</style>
+  </body>
+  </html>`)
+})*/
+// Corrected language route
+/*app.get('/hello/:text/lang=:id', (req, res) => {
+  const text = req.params.text || 
+  const id = req.params.id || "p// This was incorrectly set to req.params.text
+
+  if (id === "pt") {
+    res.send(`Seu texto: |${text}|`)
+  } else if (id === "en") {
+    res.send(`Text: |${text}|`)
+  } else {
+    res.status(400).send('<h1>Erro: Idioma não suportado</h1>')
+  }
+})
+*/
+/*
+// About page - Uncomment if needed
+app.get('/about', function (req, res) {
+  res.sendFile(path.join(__dirname, '..', 'components', 'about.htm'))
+})
+
+// Example API endpoint - JSON
+app.get('/api-data', (req, res) => {
+  res.json({
+    message: 'Here is some sample API data',
+    items: ['apple', 'banana', 'cherry'],
+  })
+})
+
+// Health check
+app.get('/healthz', (req, res) => {
+  res.status(200).json({ status: 'ok', timestamp: new Date().toISOString() })
+})
+*/
+
+export default app  Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"  content="  < <   < < MetaMeta   Nome= "Visualização"  content="largura = largura "largura = largura  "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1" largura = largura   "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1"">  Nome="">  Nome="Visualização" content=""">  Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"  content="  Meta    Nome=  "Visualização"   content="largura = largura "largura = largura  "largura = largura   do  dispositivo,  escala inicial = 1   dispositivo,   escala inicial = 1 " largura = largura   "largura = largura   do  dispositivo,  escala inicial = 1   dispositivo,   escala inicial = 1 "">  Nome="">   Nome="">   Nome="Visualização"  content=""">   Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"   content="largura = l   < < Meta    Nome=  "Visualização"   content="largura = largura "largura = largura  "largura = largura   do  dispositivo,  escala inicial = 1   dispositivo,   escala inicial = 1 " largura = largura   "largura = largura   do  dispositivo,  escala inicial = 1   dispositivo,   escala inicial = 1 "">  Nome="">  Nome="Visualização" content=""">   Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"   content="largura = l    < < Meta   Nome= "Visualização"  content="largura = largura "largura = largura  "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1" largura = largura   "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1"">  Nome="">  Nome="Visualização" content=""">  Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"  content="largura = l   < < Meta   Nome= "Visualização"  content="largura = largura "largura = largura  "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1" largura = largura   "largura = largura  do dispositivo, escala inicial = 1  dispositivo,  escala inicial = 1"">  Nome="">  Nome="Visualização" content=""">  Nome="Visualização" content="width=device-Nome="Visualização" content="width=device-" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"  content="largura = l  argura  do   dispositivo,   escala  inicial = 1">  Nome="Visualização" Conteúdo="width=device-Conteúdo=initial-scale=1">" content="width=Conteúdo-Nome="Visualização" content="width=device-Conteúdo=initial-scale=1"> Meta Nome="Visualização"   content="largura = largura   do   dispositivo,   escala  inicial = 1">  Nome="Visualização" Conteúdo="width=device-Conteúdo=initial-scale=1">
        <   <  Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</ >   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>    Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>      <   <  Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</ >   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>    Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>   Título>404 Erro</título>> 404 Erro</>     
 </<
 <<
