@@ -11,13 +11,13 @@ const app = express()
 // Home rou
 
 app.get('/a', (req, res) => {
-  const subdomains = req.subdomains;
+  const subdomains = req.subdomains
 
   if (subdomains.length > 0) {
-    const tenant = subdomains[0];
-    res.send(`Welcome to the ${tenant} subdomain`);
+    const tenant = subdomains[0]
+    res.send(`Welcome to the ${tenant} subdomain`)
   } else {
-    res.send('Welcome to the main domain');
+    res.send('Welcome to the main domain')
   }
 })
 
