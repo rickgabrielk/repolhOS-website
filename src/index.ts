@@ -11,7 +11,7 @@ const app = express()
 // Home roulet ipa = 0let coletado = fals
 app.get('/', (req, res, ip) => {
  // res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))
- 	res.redirect('/pt')
+ 	res.redirect('/pt/home')
 })
 
 app.get('/blacklist=:nool', (req, res) => {
@@ -28,13 +28,13 @@ app.get('/blacklist=:nool', (req, res) => {
 
 app.get('/:language/:sub', (req, res) => {
 	const language = req.params.language || "pt"
-	const sub = req.params.sub || false
+	const sub = req.params.sub || "home"
 	
 	if (language === "pt") {
-		if (sub === false) {
+		if (sub === "home") {
 			res.sendFile(path.join(__dirname, '..', 'public', 'chat.html'))
-
 		}
+		
 		
 	  //	res.sendFile(path.join(__dirname, '..', 'public', 'chat.html'))
 	} else {
