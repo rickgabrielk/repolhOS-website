@@ -30,13 +30,8 @@ app.get('/:language/:sub', (req, res) => {
 	const language = req.params.language || "pt"
 	const sub = req.params.sub || "home"
 	
-	if (language === "pt") {
-		if (sub === "home") {
-			res.sendFile(path.join(__dirname, '..', 'public', 'chat.html'))
-		}
-		
-		
-	  //	res.sendFile(path.join(__dirname, '..', 'public', 'chat.html'))
+	if (language === "pt"){
+		res.sendFile(path.join(__dirname, '..', 'public', 'chat.html'))
 	} else {
 		res.redirect('/')
 	}
