@@ -28,10 +28,10 @@ app.get('/blacklist=:nool', (req, res) => {
 
 app.get('/:language/:sub', (req, res) => {
 	const language = req.params.language || "pt"
-	const sub = req.params.language || null
+	const sub = req.params.sub || false
 	
 	if (language === "pt") {
-		if (sub == null) {
+		if (sub == false) {
 			res.sendFile(path.join(__dirname, '..', 'public', 'chat.html'))
 
 		}
