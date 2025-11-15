@@ -31,7 +31,7 @@ app.get('/:language/:sub', (req, res) => {
 	const sub = req.params.sub || "home"
 	
 	if (language === "pt"){
-		if (sub === "home") {
+		if (sub === "#home") {
 			res.sendFile(path.join(__dirname, '..', 'public', 'chat.html'))
 
 		}
