@@ -11,7 +11,7 @@ const app = express()
 // Home roulet ipa = 0let coletado = fals
 app.get('/', (req, res, ip) => {
  // res.sendFile(path.join(__dirname, '..', 'public', 'home.html'))
- 	res.redirect('/pt/home')
+ 	res.redirect('/pt/#home')
 })
 
 app.get('/blacklist=:nool', (req, res) => {
@@ -28,8 +28,7 @@ app.get('/blacklist=:nool', (req, res) => {
 
 app.get('/:language/:sub', (req, res) => {
 	const language = req.params.language || "pt"
-	const sub = req.params.sub || "home"
-	
+	const sub = req.params.sub || "#home"
 	if (language === "pt"){
 		if (sub === "#home") {
 			res.sendFile(path.join(__dirname, '..', 'public', 'chat.html'))
@@ -89,7 +88,7 @@ res.status(404).type('html').send(`<!DOCTYPE html>
 	<p>${completeUrl}</p>
 	<p>${dateStr}</p>
     <h3>O camimnho não existe no site.</h3>
-    <p><a href="https://repolh.de/">Caso queira retornar para pagina inicial do site.</a></p>
+    <p><a href="https://yoohmail.lol/">Caso queira retornar para pagina inicial do site.</a></p>
   </main>
 </body>
 </html>`)
